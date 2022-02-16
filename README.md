@@ -9,11 +9,11 @@
 2. Run the following command:
     Original:
     ```
-    python pytorch/predict_new.py predict_asr --dataset_dir=$INPUT_DIR --workspace=workspace --holdout_fold=1 --model_type=Cnn_9layers_Gru_FrameAtt --loss_type=clip_bce --augmentation=specaugment_mixup --feature_type=logmel --batch_size=8 --cuda --audio_16k --sed_thresholds --filename=main_strong --overlap
+    python pytorch/predict_new.py predict_asr --dataset_dir=$INPUT_DIR --workspace=workspace --holdout_fold=1 --model_type=Cnn_9layers_Gru_FrameAtt_edit --loss_type=clip_bce --augmentation=specaugment_mixup --feature_type=logmel --batch_size=8 --cuda --audio_16k --sed_thresholds --filename=main_strong --overlap
     ```
     With dynamic segmentation:
     ```
-    python pytorch/predict_new.py predict_silent_asr --dataset_dir=$INPUT_DIR --workspace=workspace --holdout_fold=1 --model_type=Cnn_9layers_Gru_FrameAtt --loss_type=clip_bce --augmentation=specaugment_mixup --feature_type=logmel --batch_size=8 --cuda --audio_16k --sed_thresholds --filename=main_strong
+    python pytorch/predict_new.py predict_silent_asr --dataset_dir=$INPUT_DIR --workspace=workspace --holdout_fold=1 --model_type=Cnn_9layers_Gru_FrameAtt_edit --loss_type=clip_bce --augmentation=specaugment_mixup --feature_type=logmel --batch_size=8 --cuda --audio_16k --sed_thresholds --filename=main_strong
     ```
     
 3. The prediction output is saved in the 'workspace/predict_results' directory in the following xml format:
