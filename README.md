@@ -7,6 +7,7 @@
     - If your audio files are not in .wav format, the prediction system will automatically convert them from their current format to .wav
 
 2. Run the following command:
+    <br>
     Original:
     ```
     python pytorch/predict_new.py predict_asr --dataset_dir=$INPUT_DIR --workspace=workspace --holdout_fold=1 --model_type=Cnn_9layers_Gru_FrameAtt_edit --loss_type=clip_bce --augmentation=specaugment_mixup --feature_type=logmel --batch_size=8 --cuda --audio_16k --sed_thresholds --filename=main_strong --overlap
